@@ -96,7 +96,7 @@ Use the steps in [Troubleshooting mail enabled public folder synchronization fai
 
 The final step in this process is to configure the Exchange Online organization and to allow access to the Exchange Server public folders.
 
-Enable the Exchange Online organization to access the on-premises public folders. You will point to all of your on-premises public folder mailboxes.
+Enable the Exchange Online organization to access the on-premises public folders. You will point to all of your on-premises public folder mailboxes. In the Exchange Online PowerShell module, run the following:
 
 ```PowerShell
 Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
